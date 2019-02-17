@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    animation: 2.5s body;
+    -moz-animation: body 2.5s; /* Firefox */
+    -webkit-animation: body 2.5s; /* Safari and Chrome */
+    -o-animation: body 2.5s; /* Opera */
+}
+.escribir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+#animacion{
+    overflow: hidden;
+
+}
+#count{
+    font-size: 1.5em;
+    animation: 2.5s tamano;
+    -moz-animation: tamano 2.5s; /* Firefox */
+    -webkit-animation: tamano 2.5s; /* Safari and Chrome */
+    -o-animation: tamano 2.5s; /* Opera */
+    top: 70%;
+    position: fixed;
+}
+.fade { 
+    animation: fadein 1s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes escribirchange{
+     0%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 1.5em;
+    }
+}
+@keyframes tamano{
+    0%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 1.5em;
+    }
+}
+@keyframes tamanoescribir{
+    0%{
+        font-size: 0px;
+
+    }
+    100%{
+        font-size: 2em;
+    }
+}
+@keyframes body{
+    from{
+        font-size: 0px;
+
+    }
+    to{
+        font-size: 1em;
+    }
+}
